@@ -12,13 +12,13 @@ Make sure you have the following dependencies installed before running the tests
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/monsoorchy/cypressautomation.git
+    git clone <repository_url>
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd <your_project_directory>
+    cd <project_directory>
     ```
 
 3. Install the Cypress development Dependency:
@@ -31,10 +31,15 @@ Make sure you have the following dependencies installed before running the tests
 
 ### Test Case 1: Validate the EMI pie chart
 
-1. Launch the application URL
-2. Go to the Home Loan tab
-3. Provide the specified values in the application and calculate the EMI
-4. Validate the output of your code with numbers in the application
+1. Launch the application URL.
+2. Go to the Home Loan tab.
+3. Provide the specified values in the application and calculate the EMI.
+4. Validate the output of your code with numbers in the application.
+5. Home Loan Amount: 25L, Interest Rate: 10%, Tenure: 10 Years.
+6. Home Loan Amount: 50L, Interest Rate: 7.5%, Tenure: 15 Years.
+7. Check availability of pie chart.
+8. Read the numbers from both the sections of the pie chart and Pass the step if its greater
+than zero, else fail it.
 
 Example:
 
