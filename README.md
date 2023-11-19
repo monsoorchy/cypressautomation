@@ -44,8 +44,13 @@ than zero, else fail it.
 Example:
 
 ```bash
-npx cypress run --record --spec file.cy.js
+npx cypress run --spec "cypress/e2e/calculator/homeLoanCalculator.cy.js"
 ```
+For headed run:
+```bash
+npx cypress run --headed  --browser chrome --spec "cypress/e2e/calculator/homeLoanCalculator.cy.js"
+```
+
 
 ### Test Case 2: Validate the EMI bar chart
 
@@ -60,7 +65,11 @@ npx cypress run --record --spec file.cy.js
 Example:
 
 ```bash
-npx cypress run --record --spec file.cy.js
+npx cypress run --spec "cypress/e2e/calculator/personalLoanCalculator.cy.js"
+```
+For headed run:
+```bash
+npx cypress run --headed --browser chrome --spec "cypress/e2e/calculator/personalLoanCalculator.cy.js"
 ```
 
 
@@ -73,8 +82,15 @@ npx cypress run --record --spec file.cy.js
 3. Validate the "ID", "email", "first_name", "last_name" from responses for all users with
 Fixtures. 
 
+Example:
+
 ```bash
-npx cypress run --record --spec file.cy.js
+npx cypress run --spec "cypress/e2e/userapi/userApi.cy.js"
+```
+
+For headed run using specific browser:
+```bash
+npx cypress run --headed --browser chrome --spec "cypress/e2e/userapi/userApi.cy.js"
 ```
 
 ## Running All the Test
